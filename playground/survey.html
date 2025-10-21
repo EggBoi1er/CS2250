@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post"></form>
+    <fieldset>
+        <legend>Student Info</legend>
+
+        <label for="name">Input your name:</label>
+        <input type="text" id="name" name="broncoId" placeholder="first name last name" minlength="2"><br>
+        
+        <label for="broncoId">Bronco ID:</label>
+        <input type="text" id="broncoId" name="broncoId" placeholder="Enter number only" required><br>
+    </fieldset>
+
+        <label for="course">Which course will you be taking this semester?</label>
+        <select name="course" id="course"multiple></select>
+            <option value=""disabled>CPP CS course only</option>
+            <option value="1300"selected>CS 1300</option>
+            <option value="1400">CS 1400</option>
+            <option value="2400">CS 2400</option>
+            <option value="0">None</option>
+        </select><br>>
+
+
+        <label for="class">Choose a course</label>
+        <input list="classes" name="class" id="class" value="CS 1300">
+        <datalist>
+            <option value="CS 1300"></option>
+            <option value="CS 1400"></option>
+            <option value="CS 2250"></option>
+            <option value="CS 3310"></option>
+        </datalist><br>
+        
+        <div>
+            Are you a freshman?<br>
+            <input type="radio" id="yes" name="freshman" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="freshman" value="no">
+            <label for="no">No</label><br>
+        </div>
+
+        <div>
+            <label for="comments">Any comments?(Optional)</label><br>
+            <textarea id="comments" name="comments" rows="50" cols="100" placeholder="Enter your comments here..."></textarea><br>
+        </div>
+
+
+</body>
+</html>
